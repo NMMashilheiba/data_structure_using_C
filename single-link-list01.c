@@ -51,7 +51,7 @@ int countOfNode(node *head){
 	node *ptr = NULL;
 	ptr = head;
 
-	while(ptr != NULL){
+	while(ptr -> Linked != NULL){
 		count++;
 		ptr = ptr -> link;
 	}

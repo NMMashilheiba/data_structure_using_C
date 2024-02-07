@@ -21,6 +21,7 @@ int main(){
 	current -> data = 60;
 	current -> link = NULL;
 
+	// linking the 2nd node
 	head -> link = current;
 
 	// creating another new node
@@ -48,6 +49,7 @@ void addAtEnd(node *head, int data){
 	// traversing upto the last node
 	while(ptr -> link != NULL){
 		ptr = ptr -> link;
+		// printf("%d ", ptr->data );
 	}
 
 	// adding the new node at the end
@@ -70,6 +72,8 @@ int countOfNode(node *head){
 		printf("%d ", ptr -> data);
 		ptr = ptr -> link;
 	}
+
+	// printf("%d ", ptr -> data);
 	printf("\nCount is: %d ", count);
 
 }
