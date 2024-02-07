@@ -26,5 +26,6 @@ int main(){
 int addAtEnd(int arr[], int freePos, int data){
 	arr[freePos] = data;
 	freePos += 1;
+	
 	return freePos;
 }
