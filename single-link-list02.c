@@ -33,6 +33,17 @@ int main(){
 
 	addAtEnd(head, 900);
 	countOfNode(head);
+	printf("\n");
+
+	// 19th feb 2024 DS using C class assignment
+	node *q = malloc(sizeof(node));
+	q = head -> link;
+	head -> link = q -> link;
+	q -> link = (q -> link) -> link;
+	(head -> link) -> link = q;
+
+	countOfNode(head);
+	printf("\n");
 
 	return 0;
 }
