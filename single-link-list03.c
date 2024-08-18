@@ -18,7 +18,7 @@ int main(){
 	head -> link = NULL;
 	
 	node *ptr = head;
-	ptr = addAtEnd(ptr, 101);
+	ptr = addAtEnd(ptr, 101); 
 	ptr = addAtEnd(ptr, 101);
 	ptr = addAtEnd(ptr, 101);
 	ptr = addAtEnd(ptr, 101);
